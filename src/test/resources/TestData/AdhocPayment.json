@@ -1,0 +1,8 @@
+[{"testCase":"TC_102_1","ReqInitiation":{"RequestNo":"1-28352685376","AirportCode":"JFK","timetoSet":"12/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"1","AdultNames":"TestA","ChildNames":"TestC"}},
+{"testCase":"TC_102_2","ReqInitiation":{"RequestNo":"1-28352687862","AirportCode":"JFK","timetoSet":"11/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"","AdultNames":"TestA","ChildNames":""}},
+{"testCase":"TC_102_3","ReqInitiation":{"RequestNo":"1-28352725357","AirportCode":"JFK","timetoSet":"11/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"1","AdultNames":"TestA","ChildNames":"TestC"}},
+{"testCase":"TC_102_4","ReqInitiation":{"RequestNo":"1-11420739","AirportCode":"JFK","timetoSet":"11/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"1","AdultNames":"TestA","ChildNames":"TestC"}},
+{"testCase":"TC_102_5","ReqInitiation":{"RequestNo":"1-28352685376","AirportCode":"JFK","timetoSet":"11/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"1","AdultNames":"TestA","ChildNames":""}},
+{"testCase":"TC_102_6","ReqInitiation":{"RequestNo":"1-28352685376","AirportCode":"JFK","timetoSet":"11/19/2019 12:00:00 AM","AdultNo":"1","ChildNo":"1","AdultNames":"","ChildNames":"TestC"}}
+
+]

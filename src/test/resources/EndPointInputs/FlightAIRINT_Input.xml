@@ -1,0 +1,26 @@
+<Message>
+    <IATACode>AA</IATACode>
+	<FltNum>%%flight_numb%%</FltNum>
+	<ScheduledArrivalTime>%%date_tomrw%%T22:13:00</ScheduledArrivalTime>
+	<ScheduledDepartureTime>%%date_today%%T18:20:00</ScheduledDepartureTime>
+	<arrivalDelay>%%date_today%%T22:33:00</arrivalDelay>
+	<arrivalGate>D</arrivalGate>
+	<departureDelay>%%date_today%%T18:40:00</departureDelay>
+	<departureGate>D</departureGate>
+    <SkdTaxiOut>PT17M</SkdTaxiOut>
+     <SkdTaxiIn>PT13M</SkdTaxiIn>
+     <LatestTaxiOut>PT17M</LatestTaxiOut>
+     <LatestTaxiIn>PT13M</LatestTaxiIn>
+      <DepGMTAdjustment>-PT300M</DepGMTAdjustment>
+      <ArrGMTAdjustment>-PT240M</ArrGMTAdjustment>
+	<destination>MIA</destination>
+	<flightDate>%%date_today%%T00:00:00</flightDate>
+	<flightStatus>
+	<arrival>S</arrival>
+	<departure>S</departure>
+	<leg>%%flgt_status%%</leg>
+	</flightStatus>
+	<newDestination></newDestination>
+	<newOrigin></newOrigin>
+	<origin>DFW</origin>
+</Message>

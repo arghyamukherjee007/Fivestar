@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" parallel="tests" name="Failed suite [Run Test Cukes]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Regression Tests(failed)">
+    <parameter name="BrowserName" value="CHROME"/>
+    <parameter name="ExecutionMode" value="LOCAL"/>
+    <classes>
+      <class name="com.cucumbercraft.runners.RunCucumberTests_Regression">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="tearDownClass"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.cucumbercraft.runners.RunCucumberTests_Regression -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [Run Test Cukes] -->

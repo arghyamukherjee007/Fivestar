@@ -1,0 +1,144 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core" xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+
+   <soapenv:Header/>
+
+   <soapenv:Body>
+
+      <tem:PSSLongSell>
+
+         <tem:connectionInfo>
+
+            <qmo:City xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+
+            <qmo:ContractorCode>AAO</qmo:ContractorCode>
+
+            <qmo:DutyCode>5</qmo:DutyCode>
+
+            <qmo:Environment>CERT</qmo:Environment>
+
+            <qmo:Password>%%sabrePwd%%</qmo:Password>
+
+            <qmo:UserName>%%sabre_userId%%</qmo:UserName>
+
+         </tem:connectionInfo>
+
+         <tem:pnrData>
+
+            <qmo1:PNRType>REVCASH</qmo1:PNRType>
+
+            <qmo1:Phone>
+
+               <qmo1:Phone>
+
+                  <qmo1:PhoneCity>HDQ</qmo1:PhoneCity>
+
+                  <qmo1:PhoneNumber>6029999999</qmo1:PhoneNumber>
+
+                  <qmo1:PhoneType>C</qmo1:PhoneType>
+
+               </qmo1:Phone>
+
+            </qmo1:Phone>
+
+            <qmo1:Passengers>
+
+               <qmo1:Passenger>
+
+                  <qmo1:Bags>0</qmo1:Bags>
+
+                  <qmo1:DateOfBirth>1981-01-02T00:00:00</qmo1:DateOfBirth>
+
+                  <qmo1:FirstName>%%psngr1_fname%%</qmo1:FirstName>
+
+                  <qmo1:FrequentFlyer>%%aadv1%%</qmo1:FrequentFlyer>
+
+                  <qmo1:IsPartOfMultiName>false</qmo1:IsPartOfMultiName>
+
+                  <qmo1:LastName>%%psngr1_lname%%</qmo1:LastName>
+
+                  <qmo1:PassengerGender>MALE</qmo1:PassengerGender>
+
+               </qmo1:Passenger>
+
+            </qmo1:Passengers>
+
+            <qmo1:Flights>
+
+               <qmo1:Flight>
+
+                  <qmo1:AirlineCode>AA</qmo1:AirlineCode>
+
+                  <qmo1:ClassOfService>Y</qmo1:ClassOfService>
+
+                  <qmo1:DepartureDateTime>%%dep_date1%%T00:00:00.000Z</qmo1:DepartureDateTime>
+
+                  <qmo1:Destination>%%arr_station1%%</qmo1:Destination>
+
+                  <qmo1:FlightNumber>%%flight_numb1%%</qmo1:FlightNumber>
+
+                  <qmo1:IsAvailabilitySearch>false</qmo1:IsAvailabilitySearch>
+
+                  <qmo1:Origin>%%dep_station1%%</qmo1:Origin>
+
+                  <qmo1:SegmentStatus>NN</qmo1:SegmentStatus>
+
+ 
+
+               </qmo1:Flight>
+			   <qmo1:Flight>
+
+                  <qmo1:AirlineCode>LH</qmo1:AirlineCode>
+
+                  <qmo1:ClassOfService>Y</qmo1:ClassOfService>
+
+                  <qmo1:DepartureDateTime>%%dep_date2%%T00:00:00.000Z</qmo1:DepartureDateTime>
+
+                  <qmo1:Destination>%%arr_station2%%</qmo1:Destination>
+
+                  <qmo1:FlightNumber>%%flight_numb2%%</qmo1:FlightNumber>
+
+                  <qmo1:IsAvailabilitySearch>false</qmo1:IsAvailabilitySearch>
+
+                  <qmo1:Origin>%%dep_station2%%</qmo1:Origin>
+
+                  <qmo1:SegmentStatus>NN</qmo1:SegmentStatus>
+
+ 
+
+               </qmo1:Flight>
+
+            </qmo1:Flights>
+
+           <qmo1:Fare>L</qmo1:Fare>
+
+            <qmo1:Hold>false</qmo1:Hold>
+
+            <qmo1:AssignSeats>false</qmo1:AssignSeats>
+
+            <qmo1:SecurityCleared>true</qmo1:SecurityCleared>
+
+            <qmo1:CloseATAC>false</qmo1:CloseATAC>
+
+         </tem:pnrData>
+
+         <tem:NativeRequests>
+
+            <qmo1:Commands>
+
+               <arr:string>5***</arr:string>
+
+               <arr:string>5***</arr:string>
+
+            </qmo1:Commands>
+
+            <qmo1:PNR></qmo1:PNR>
+
+         </tem:NativeRequests>
+
+         <tem:NativeRequests xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+
+      </tem:PSSLongSell>
+
+   </soapenv:Body>
+
+</soapenv:Envelope> 

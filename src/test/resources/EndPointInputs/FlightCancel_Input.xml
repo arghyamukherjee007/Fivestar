@@ -1,0 +1,26 @@
+<Message>
+    <IATACode>%%airline_code%%</IATACode>
+	<FltNum>%%flight_numb%%</FltNum>
+	<ScheduledArrivalTime>%%date_today%%T%%sch_arr_time%%</ScheduledArrivalTime>
+	<ScheduledDepartureTime>%%date_today%%T%%sch_dep_time%%</ScheduledDepartureTime>
+	<arrivalDelay>%%date_today%%T%%arr_delay%%</arrivalDelay>
+	<arrivalGate>D</arrivalGate>
+	<departureDelay>%%date_today%%T%%dep_delay%%</departureDelay>
+	<departureGate>D</departureGate>
+    <SkdTaxiOut>%%TaxiOut1%%</SkdTaxiOut>
+    <SkdTaxiIn>%%TaxiIn1%%</SkdTaxiIn>
+    <LatestTaxiOut>%%TaxiOut2%%</LatestTaxiOut>
+    <LatestTaxiIn>%%TaxiIn2%%</LatestTaxiIn>
+    <DepGMTAdjustment>%%Dep_GMT%%</DepGMTAdjustment>
+    <ArrGMTAdjustment>%%Arr_GMT%%</ArrGMTAdjustment>
+	<destination>%%arr_station1%%</destination>
+	<flightDate>2019-01-15T00:00:00</flightDate>
+	<flightStatus>
+	<arrival>S</arrival>
+	<departure>S</departure>
+	<leg>%%flgt_status%%</leg>
+	</flightStatus>
+	<newDestination></newDestination>
+	<newOrigin></newOrigin>
+	<origin>%%dep_station1%%</origin>
+</Message>

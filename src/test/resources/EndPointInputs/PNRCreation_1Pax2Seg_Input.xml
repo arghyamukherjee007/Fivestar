@@ -1,0 +1,85 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:PSSLongSell>
+         <tem:connectionInfo>
+            <qmo:City xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">HDQ</qmo:City>
+            <qmo:ContractorCode xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">AAO</qmo:ContractorCode>
+            <qmo:DutyCode xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">5</qmo:DutyCode>
+            <qmo:Environment xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%envSabre%%</qmo:Environment>
+            <qmo:Password xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%sabrePwd%%</qmo:Password>
+            <qmo:UserName xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%sabre_userId%%</qmo:UserName>
+         </tem:connectionInfo>
+         <tem:pnrData>
+            <qmo1:Trace xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model"/>
+            <qmo1:PNRType xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">REVCASH</qmo1:PNRType>
+            <qmo1:Phone xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <qmo1:Phone>
+                  <qmo1:PhoneCity>DFW</qmo1:PhoneCity>
+                  <qmo1:PhoneNumber>602-300-43224</qmo1:PhoneNumber>
+                  <qmo1:PhoneType>H</qmo1:PhoneType>
+               </qmo1:Phone>
+            </qmo1:Phone>
+            <qmo1:Email xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <arr:string>abc@gmail.com</arr:string>
+            </qmo1:Email>
+            <qmo1:Address xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <qmo1:City>PHX</qmo1:City>
+               <qmo1:Country>USA</qmo1:Country>
+               <qmo1:State>AZ</qmo1:State>
+               <qmo1:StreetAddress>2037 Farring Street</qmo1:StreetAddress>
+               <qmo1:ZipCode>85017</qmo1:ZipCode>
+            </qmo1:Address>
+            <qmo1:Passengers xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <qmo1:Passenger>
+                  <qmo1:DateOfBirth>1988-08-13T00:00:00.000</qmo1:DateOfBirth>
+                  <qmo1:FirstName>%%psngr1_fname%%</qmo1:FirstName>
+                  <qmo1:FrequentFlyer>%%aadv1%%</qmo1:FrequentFlyer>
+                  <qmo1:IsPartOfMultiName>false</qmo1:IsPartOfMultiName>
+                  <qmo1:LastName>%%psngr1_lname%%</qmo1:LastName>
+                  <qmo1:PassengerGender>MALE</qmo1:PassengerGender>
+               </qmo1:Passenger>
+            </qmo1:Passengers>
+            <qmo1:Flights xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <qmo1:Flight>
+                  <qmo1:AirlineCode>AA</qmo1:AirlineCode>
+                  <qmo1:ArrivalDateTime>%%arr_date1%%T00:00:00</qmo1:ArrivalDateTime>
+                  <qmo1:ClassOfService>Y</qmo1:ClassOfService>
+                  <qmo1:DepartureDateTime>%%dep_date1%%T00:00:00</qmo1:DepartureDateTime>
+                  <qmo1:DepartureTime>0400</qmo1:DepartureTime>
+                  <qmo1:Destination>%%arr_station1%%</qmo1:Destination>
+                  <qmo1:FlightNumber>%%flight_numb1%%</qmo1:FlightNumber>
+                  <qmo1:IsAvailabilitySearch>false</qmo1:IsAvailabilitySearch>
+                  <qmo1:LayoverAirport xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <qmo1:Origin>%%dep_station1%%</qmo1:Origin>
+                  <qmo1:SegmentStatus>OB</qmo1:SegmentStatus>
+               </qmo1:Flight>
+               <qmo1:Flight>
+                  <qmo1:AirlineCode>AA</qmo1:AirlineCode>
+                  <qmo1:ArrivalDateTime>%%arr_date2%%T00:00:00</qmo1:ArrivalDateTime>
+                  <qmo1:ClassOfService>J</qmo1:ClassOfService>
+                  <qmo1:DepartureDateTime>%%dep_date2%%T00:00:00</qmo1:DepartureDateTime>
+                  <qmo1:DepartureTime>0400</qmo1:DepartureTime>
+                  <qmo1:Destination>%%arr_station2%%</qmo1:Destination>
+                  <qmo1:FlightNumber>%%flight_numb2%%</qmo1:FlightNumber>
+                  <qmo1:IsAvailabilitySearch>false</qmo1:IsAvailabilitySearch>
+                  <qmo1:LayoverAirport xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <qmo1:Origin>%%dep_station2%%</qmo1:Origin>
+                  <qmo1:SegmentStatus>OB</qmo1:SegmentStatus>
+               </qmo1:Flight>
+            </qmo1:Flights>
+            <qmo1:Fare xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">L</qmo1:Fare>
+            <qmo1:Hold xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">false</qmo1:Hold>
+            <qmo1:AssignSeats xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">false</qmo1:AssignSeats>
+		    <qmo1:SecurityCleared xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model" >false</qmo1:SecurityCleared>
+            <qmo1:SegmentStatus xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model" >NN</qmo1:SegmentStatus>
+            <qmo1:CloseATAC xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model" >false</qmo1:CloseATAC>
+		 </tem:pnrData>
+         <tem:NativeRequests>
+            <qmo1:Commands xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model">
+               <arr:string/>
+            </qmo1:Commands>
+         </tem:NativeRequests>
+      </tem:PSSLongSell>
+   </soapenv:Body>
+</soapenv:Envelope>

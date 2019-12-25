@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core" xmlns:qmo1="http://schemas.datacontract.org/2004/07/QMO.PSS.Model" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:PSSUpdatePNRsCommand>
+         <tem:connectionInfo>
+            <qmo:City xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">HDQ</qmo:City>
+            <qmo:ContractorCode xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">AAO</qmo:ContractorCode>
+            <qmo:DutyCode xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">5</qmo:DutyCode>
+            <qmo:Environment xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%envSabre%%</qmo:Environment>
+            <qmo:Password xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%sabrePwd%%</qmo:Password>
+            <qmo:UserName xmlns:qmo="http://schemas.datacontract.org/2004/07/QMO.PSS.Core">%%sabre_userId%%</qmo:UserName>
+         </tem:connectionInfo>
+         <!--Optional:-->
+         <tem:requests>
+            <!--Optional:-->
+            <qmo1:Commands>
+               <!--Zero or more repetitions:-->
+               <arr:string>5H-UPDATE</arr:string>
+               <arr:string>6P</arr:string>
+               <arr:string>ER</arr:string>
+            </qmo1:Commands>
+            <!--Optional:-->
+            <qmo1:PNR>%%pnr%%</qmo1:PNR>
+         </tem:requests>
+      </tem:PSSUpdatePNRsCommand>
+   </soapenv:Body>
+</soapenv:Envelope>

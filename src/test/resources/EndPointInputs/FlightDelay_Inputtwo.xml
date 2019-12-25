@@ -1,0 +1,26 @@
+<Message>
+    <IATACode>LH</IATACode>
+	<FltNum>0439</FltNum>
+	<ScheduledArrivalTime>%%date_tomrw%%T08:50:00</ScheduledArrivalTime>
+	<ScheduledDepartureTime>%%date_today%%T16:00:00</ScheduledDepartureTime>
+	<arrivalDelay>%%date_tomrw%%T%%arr_delay%%</arrivalDelay>
+	<arrivalGate>D</arrivalGate>
+	<departureDelay>%%date_today%%T%%dep_delay%%</departureDelay>
+	<departureGate>D</departureGate>
+    <SkdTaxiOut>PT17M</SkdTaxiOut>
+      <SkdTaxiIn>PT13M</SkdTaxiIn>
+      <LatestTaxiOut>PT17M</LatestTaxiOut>
+      <LatestTaxiIn>PT13M</LatestTaxiIn>
+      <DepGMTAdjustment>-PT240M</DepGMTAdjustment>
+      <ArrGMTAdjustment>-PT300M</ArrGMTAdjustment>
+	<destination>FRA</destination>
+	<flightDate>%%date_today%%T00:00:00</flightDate>
+	<flightStatus>
+	<arrival>S</arrival>
+	<departure>S</departure>
+	<leg></leg>
+	</flightStatus>
+	<newDestination></newDestination>
+	<newOrigin></newOrigin>
+	<origin>DFW</origin>
+</Message>
